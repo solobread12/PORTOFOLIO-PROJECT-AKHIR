@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Gradasi Emas Utama -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <!-- Gradasi Emas Terang (Highlight) -->
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF3C7" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <!-- Gradasi Latar Perisai (Obsidian Navy) -->
+    <radialGradient id="shieldBg" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D16" />
+    </radialGradient>
+
+    <!-- Gradasi Perak untuk Pilar Huruf N -->
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <!-- Efek Bayangan Kedalaman -->
+    <filter id="crestShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- 1. Cincin Kompas Penjelajah -->
+  <g opacity="0.85">
+    <circle cx="200" cy="200" r="166" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="10 6" />
+    <circle cx="200" cy="200" r="152" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+    <!-- Penanda Arah Mata Angin (N, E, S, W) -->
+    <polygon points="200,26 205,36 200,46 195,36" fill="url(#goldLight)" />
+    <polygon points="200,354 205,364 200,374 195,364" fill="url(#goldLight)" />
+    <polygon points="26,200 36,195 46,200 36,205" fill="url(#goldLight)" />
+    <polygon points="354,200 364,195 374,200 364,205" fill="url(#goldLight)" />
+  </g>
+
+  <!-- 2. Sepasang Pedang Bersilang di Belakang Perisai -->
+  <g filter="url(#crestShadow)">
+    <!-- Pedang Kiri-Bawah ke Kanan-Atas -->
+    <g transform="rotate(42 200 200)">
+      <polygon points="200,24 209,52 206,282 194,282 191,52" fill="url(#goldGrad)" />
+      <line x1="200" y1="45" x2="200" y2="278" stroke="#78350F" stroke-width="1.5" />
+      <polygon points="174,282 226,282 221,291 179,291" fill="url(#goldLight)" />
+      <rect x="195" y="291" width="10" height="42" rx="2" fill="#334155" />
+      <polygon points="200,333 209,344 200,355 191,344" fill="url(#goldGrad)" />
+    </g>
+
+    <!-- Pedang Kanan-Bawah ke Kiri-Atas -->
+    <g transform="rotate(-42 200 200)">
+      <polygon points="200,24 209,52 206,282 194,282 191,52" fill="url(#goldGrad)" />
+      <line x1="200" y1="45" x2="200" y2="278" stroke="#78350F" stroke-width="1.5" />
+      <polygon points="174,282 226,282 221,291 179,291" fill="url(#goldLight)" />
+      <rect x="195" y="291" width="10" height="42" rx="2" fill="#334155" />
+      <polygon points="200,333 209,344 200,355 191,344" fill="url(#goldGrad)" />
+    </g>
+  </g>
+
+  <!-- 3. Perisai Utama Guild -->
+  <g filter="url(#crestShadow)">
+    <path d="M 200,72 L 285,95 L 285,195 C 285,265 200,315 200,315 C 200,315 115,265 115,195 L 115,95 Z" fill="url(#shieldBg)" stroke="url(#goldGrad)" stroke-width="6" stroke-linejoin="round" />
+    <!-- Garis Bingkai Dalam Perisai -->
+    <path d="M 200,84 L 273,104 L 273,193 C 273,254 200,300 200,300 C 200,300 127,254 127,193 L 127,104 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.65" />
+  </g>
+
+  <!-- 4. Bintang Utara (Rank S Emblem) di Puncak Perisai -->
+  <polygon points="200,86 203.5,95.5 213,99 203.5,102.5 200,112 196.5,102.5 187,99 196.5,95.5" fill="url(#goldLight)" />
+
+  <!-- 5. Monogram Initial "N" -->
+  <g filter="url(#crestShadow)">
+    <!-- Pilar Kiri (Perak) -->
+    <polygon points="145,138 175,138 175,246 164,258 153,246 153,147" fill="url(#silverGrad)" />
+    <!-- Pilar Kanan (Perak) -->
+    <polygon points="225,138 236,126 247,138 247,237 255,246 225,246" fill="url(#silverGrad)" />
+    <!-- Bilah Diagonal Utama (Emas) -->
+    <polygon points="153,138 176,138 247,246 224,246" fill="url(#goldGrad)" />
+    <!-- Garis Kilau Bilah -->
+    <line x1="164.5" y1="138" x2="235.5" y2="246" stroke="#FEF3C7" stroke-width="1.2" opacity="0.85" />
+  </g>
+
+  <!-- 6. Tiga Permata Peringkat di Bawah Huruf N -->
+  <g fill="url(#goldLight)">
+    <polygon points="200,268 205,274 200,280 195,274" />
+    <polygon points="183,263 186.5,267.5 183,272 179.5,267.5" opacity="0.8" />
+    <polygon points="217,263 220.5,267.5 217,272 213.5,267.5" opacity="0.8" />
+  </g>
+</svg>

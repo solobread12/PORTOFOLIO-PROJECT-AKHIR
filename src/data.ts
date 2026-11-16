@@ -1,16 +1,16 @@
 // Semua isi di sini masih placeholder. Ganti dengan data aslimu.
 
 export const profile = {
-  name: "Acho",
+  name: "Nayaka",
   classes: ["Penenun Waktu", "Pemburu Cahaya"],
   rank: "B",
   tagline: "Editor video dan fotografer",
   // Peran yang berganti pelan di bawah nama pada hero
   roles: ["Editor video", "Fotografer lanskap"],
   bio: "Aku merangkai momen jadi cerita. Sebagai Penenun Waktu, aku mengedit video konten sosmed yang membuat orang berhenti scroll. Sebagai Pemburu Cahaya, aku memburu pemandangan terbaik lewat lensa, dari fajar sampai senja.",
-  focus: "Konten sosmed dan lanskap",
-  from: "Kota kamu",
-  since: "Tahun mulai",
+  focus: "cinematic content dan photography",
+  from: "Tangerang, Indonesia",
+  since: "2020",
   questsDone: 6,
 };
 
@@ -18,13 +18,13 @@ export type Skill = { name: string; level: number }; // level 1-10
 
 export const skills: { video: Skill[]; photo: Skill[] } = {
   video: [
-    { name: "Premiere Pro", level: 7 },
+    { name: "Premiere Pro", level: 5 },
     { name: "CapCut", level: 8 },
-    { name: "DaVinci Resolve", level: 5 },
+    { name: "DaVinci Resolve", level: 4 },
     { name: "After Effects", level: 4 },
   ],
   photo: [
-    { name: "Lightroom", level: 8 },
+    { name: "Lightroom", level: 7},
     { name: "Photoshop", level: 6 },
     { name: "Fotografi lanskap", level: 7 },
     { name: "Drone", level: 5 },
@@ -55,7 +55,7 @@ export const quests: Quest[] = [
     reward: "100 ribu views",
     level: 2,
     tools: ["CapCut", "Premiere Pro"],
-    video: "",
+    video: "https://www.instagram.com/reel/DRraDuzE2Nz/",
   },
   {
     type: "video",
@@ -115,9 +115,9 @@ export const quests: Quest[] = [
 ];
 
 export const contact = {
-  whatsapp: "62XXXXXXXXXX", // nomor WA tanpa + dan tanpa 0 di depan
-  instagram: "https://instagram.com/username",
-  email: "kamu@email.com",
+  whatsapp: "6281213833143", // nomor WA tanpa + dan tanpa 0 di depan
+  instagram: "https://www.instagram.com/nayyk.12/",
+  email: "nayakabackup2@gmail.com",
   // Daftar gratis di formspree.io lalu isi endpoint-nya, contoh: https://formspree.io/f/xxxxxxxx
   formEndpoint: "",
 };
